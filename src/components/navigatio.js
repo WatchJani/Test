@@ -1,11 +1,17 @@
 import React from "react"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
+import Logo from "./logo"
 
 const Navigation = () => {
     return (
         <div>
-            <Link to="/">Home</Link>
-            <Link to="about">About</Link>
+            <div className="navi">
+                <Logo />
+                <div>
+                    <Link to="/">Home</Link>
+                    <Link to="about">About</Link>
+                </div>
+            </div>
         </div>
     )
 }
